@@ -1,0 +1,16 @@
+{
+    "name": "bug-to-excel-online",
+    "version": "1.1.0",
+    "author": "liqingjht",
+    "description": "Generate bug list of specify URL to excel file.",
+    "main": "server.js",
+    "license": "MIT",
+    "dependencies": {
+        "agentkeepalive": "^3.1.0",
+        "body-parser": "^1.17.1",
+        "cheerio": "~0.22.0",
+        "exceljs": "~0.4.2",
+        "express": "^4.15.2",
+        "request": "~2.79.0"
+    }
+}

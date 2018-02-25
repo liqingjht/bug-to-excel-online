@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bug To Excel</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/flat-ui.min.css" rel="stylesheet">
+	<link href="css/blower-loading.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-1"></div>
+			<div class="col-xs-3" style="text-align:left; margin-top:20px;">
+				<span id="task_tip" style="visibility:hidden">Running Generating Task: <span id="running_task"></span><span>
+			</div>
+			<div class="col-xs-8"></div>
+		</div>
+		<div class="row" style="margin-top:30%;" id="login">
+			<div class="col-xs-3"></div>
+			<div class="col-xs-6" style="text-align:center;" id="account">
+				<div class="input-group input-group-hg input-group-rounded">
+					<input type="text" value="" id="input-account" placeholder="URL Of Bug List" class="form-control" data-toggle="tooltip" data-placement="auto top"
+					    title="" data-trigger="manual" />
+					<span class="input-group-btn">
+    					<span type="submit" class="btn"><span class="fui-clip"></span></span>
+				</span>
+			</div>
+			<div style="margin-top: 20px;">
+				<input type="button" class="btn btn-inverse btn-wide" id="saveAccount" value="Start">
+			</div>
+		</div>
+		<div class="col-xs-3"></div>
+	</div>
+	<div class="row" id="progress" style="display:none">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-8">
+			<div id="loadingContainer">
+				<div class="loadingbar">
+					<div class="marker_container">
+						<div class="marker"></div>
+						<div class="marker"></div>
+						<div class="marker"></div>
+						<div class="marker"></div>
+					</div>
+					<div class="filler_wrapper">
+						<div class="filler">
+							<span class="value">0%</span>
+						</div>
+					</div>
+				</div>
+				<div id="download" style="display:none">
+					<img src="image/download.svg" alt="Download">
+					<span>Download Excel file</span>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2"></div>
+	</div>
+	<div class="row" id="alert-bar" style="margin-top:20px; display:none;">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-8" id="alert-row"></div>
+		<div class="col-xs-2"></div>
+	</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/flat-ui.min.js"></script>
+	<script src="js/unique.js"></script>
+	<script src="js/blower-loading.js"></script>
+	<script src="js/index.js"></script>
+</body>
+
+</html>

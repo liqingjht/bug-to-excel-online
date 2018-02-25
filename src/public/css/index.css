@@ -1,0 +1,27 @@
+.title-head {
+    -webkit-app-region: drag;
+    background-color: #4bb4fb;
+    color: white;
+    display: list-item;
+}
+
+.my-settings,
+.my-close {
+    cursor: pointer;
+    height: 32px;
+    line-height: 32px;
+    float: rigth;
+    margin-right: 7px;
+    z-index: 1;
+    -webkit-app-region: no-drag;
+}
+
+#download img {
+    width: 20%;
+    cursor: pointer;
+}
+
+#download span {
+    vertical-align: bottom;
+    margin-left: 20px;
+}
